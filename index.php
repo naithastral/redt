@@ -2,7 +2,6 @@
 $url=$_SERVER['REQUEST_URI'];
 $uu=$_GET["url"];
 $u=explode("/",$uu);
-print_r($u);exit();
 $id=trim($u[0]);
 $idELength=substr($id,4,1);
 $idE1=substr($id,0,$idELength+1);
