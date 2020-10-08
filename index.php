@@ -27,7 +27,7 @@ for($i=5;$i<=count($u)-1;$i++){
 $imageSrc=rtrim($imageSrc,"/");
 $imageLink="https://s3.amazonaws.com/".$imageSrc;
 
-header("location: $imageLink");
+
 // Track Openers
 $rdt="35.245.247.191";
 $ip=$_SERVER["REMOTE_ADDR"];
@@ -49,7 +49,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
 curl_setopt($ch, CURLOPT_TIMEOUT, 30); 
 $result = curl_exec($ch);
 curl_close($ch);
-
+header("location: $imageLink");
 function get_string_between($string, $start, $end){
 	$string = ' ' . $string;
 	$ini = strpos($string, $start);
