@@ -49,7 +49,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
 curl_setopt($ch, CURLOPT_TIMEOUT, 30); 
 $result = curl_exec($ch);
 curl_close($ch);
-header("location: $imageLink");
+//header("location: $imageLink");
 function get_string_between($string, $start, $end){
 	$string = ' ' . $string;
 	$ini = strpos($string, $start);
