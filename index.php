@@ -1,5 +1,6 @@
 <?php
 $url=$_SERVER['REQUEST_URI'];
+echo $url."<br>";
 $u=explode("/",$url);
 print_r($u);
 $id=trim($u[2]);
