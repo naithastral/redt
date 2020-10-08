@@ -2,12 +2,6 @@
 $url=$_SERVER['REQUEST_URI'];
 $u=explode("/",$url);
 print_r($u);
-$id=trim($u[1]);
-$idELength=substr($id,4,1);
-$idE1=substr($id,0,$idELength+1);
-$idE2=substr($id,-$idELength);
-$idE=get_string_between($id,$idE1,$idE2);
-
 $id=trim($u[2]);
 $idELength=substr($id,4,1);
 $idE1=substr($id,0,$idELength+1);
@@ -15,6 +9,12 @@ $idE2=substr($id,-$idELength);
 $idE=get_string_between($id,$idE1,$idE2);
 
 $id=trim($u[3]);
+$idELength=substr($id,4,1);
+$idE1=substr($id,0,$idELength+1);
+$idE2=substr($id,-$idELength);
+$idE=get_string_between($id,$idE1,$idE2);
+
+$id=trim($u[4]);
 $idELength=substr($id,4,1);
 $idE1=substr($id,0,$idELength+1);
 $idE2=substr($id,-$idELength);
