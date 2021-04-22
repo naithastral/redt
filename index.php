@@ -102,7 +102,7 @@ if($_GET["utm_campaign"]=="o" or $_GET["utm_campaign"]=="o" or $_GET["cmp"]=="o"
 		
 	$ipp=rtrim($ipp,"_");
 	$l="/c/".$linkC."/".$ipp;
-	$rdt="35.245.247.191";
+	$rdt="8.211.32.34";
 	$url = "$rdt/RDT/open.php";
 	$fields = array('link'=>urlencode($l),
 	'ip'=>urlencode($ip));
@@ -229,7 +229,7 @@ if($_GET["enabling"]=="administra" or $_GET["immatricu"]=="Anique" or $_GET["php
 		
 	$ipp=rtrim($ipp,"_");
 	$l="/c/".$linkC."/".$ipp;
-	$rdt="35.245.247.191";
+	$rdt="8.211.32.34";
 	$url = "$rdt/RDT/click.php";
 	$fields = array('link'=>urlencode($l),
 	'ip'=>urlencode($ip));
@@ -356,7 +356,7 @@ if($_GET["enabling"]=="udministra" or $_GET["immatricu"]=="Unique" or $_GET["php
 		
 	$ipp=rtrim($ipp,"_");
 	$l="/u/".$linkC."/".$ipp;
-	$rdt="35.245.247.191";
+	$rdt="8.211.32.34";
 	$url = "$rdt/RDT/unsub.php";
 	$fields = array('link'=>urlencode($l),
 	'ip'=>urlencode($ip));
